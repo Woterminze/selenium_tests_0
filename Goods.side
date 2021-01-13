@@ -1,0 +1,307 @@
+{
+  "id": "3e7f1061-ca69-4525-ae55-668b590bd485",
+  "version": "2.0",
+  "name": "Goods",
+  "url": "https://goods.ru",
+  "tests": [{
+    "id": "ef26d7e2-fdfc-4ffd-b49c-5d44f3eee477",
+    "name": "Поиск, добавление и удаление товара ",
+    "commands": [{
+      "id": "df936943-d18b-40af-b8d2-082e426b4fd6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca925599-c7cd-4ecc-b400-dfd7f04ffce9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81d8fd7d-f824-41ee-a4b8-c8a9dbbc3f2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-field-input",
+      "targets": [
+        ["css=.search-field-input", "css:finder"],
+        ["xpath=//header[@id='page-header']/div/div[2]/div/div/div[3]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcede97a-3d15-4bb3-b006-20ea00d653e5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.search-field-input",
+      "targets": [
+        ["css=.search-field-input", "css:finder"],
+        ["xpath=//header[@id='page-header']/div/div[2]/div/div/div[3]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100 026 612 278"
+    }, {
+      "id": "a37f7eee-80b7-4f4d-b013-30ecdd468d1f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.search-field-input",
+      "targets": [
+        ["css=.search-field-input", "css:finder"],
+        ["xpath=//header[@id='page-header']/div/div[2]/div/div/div[3]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7aa826e8-60c5-4aa4-8e5c-9a27db338b1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.l-sm > .l-button",
+      "targets": [
+        ["css=.l-sm > .l-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/article/div[3]/div/div[2]/div/div/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b192c6f9-cd2f-4c55-96c8-b8def7f3bf56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.l-sm .switch-number__btn:nth-child(1)",
+      "targets": [
+        ["css=.l-sm .switch-number__btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/article/div[3]/div/div[2]/div/div[2]/div[6]/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1f51a28-a14b-4c26-9260-adf646882852",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Корзина пуста",
+      "targets": [
+        ["linkText=Корзина пуста", "linkText"],
+        ["css=.mini-cart__info", "css:finder"],
+        ["xpath=//div[@id='sticky-site-header']/div/div[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/multicart/')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корзина пуста')]", "xpath:innerText"]
+      ],
+      "value": "Корзина пуста"
+    }, {
+      "id": "ff55c434-24ad-4e6e-827e-4c96cf8aa473",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e4571048-77d7-4f62-bd5c-f4c674b9a152",
+    "name": "Сортировка ноутбуков по цене",
+    "commands": [{
+      "id": "a747edcf-ce16-4265-852a-2bf836e0c633",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90bab8a8-0d1f-44fd-a38a-f7ad4f0bd831",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b68c384-269d-435b-bcd8-dc44d6979f36",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.home-aside-slider__slide:nth-child(1) img",
+      "targets": [
+        ["css=.home-aside-slider__slide:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://main-cdn.goods.ru/upload/mnt/7e4c4f32-8b7e-4e1b-8bb3-4916ddbd02c0.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c429f5fa-8bd5-46b4-9620-56dcda46fbac",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.home-aside-slider__slide:nth-child(1) img",
+      "targets": [
+        ["css=.home-aside-slider__slide:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://main-cdn.goods.ru/upload/mnt/7e4c4f32-8b7e-4e1b-8bb3-4916ddbd02c0.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b981f28-3253-43ae-ab09-7becd5222c87",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.menu-cards__col:nth-child(2) img",
+      "targets": [
+        ["css=.menu-cards__col:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='Электроника']", "xpath:img"],
+        ["xpath=//div[@id='app']/main/div/div/div[3]/div/div[2]/div/div/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df8743c2-0659-46e2-be95-99211ee72cf3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.menu-cards__col:nth-child(2) img",
+      "targets": [
+        ["css=.menu-cards__col:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='Электроника']", "xpath:img"],
+        ["xpath=//div[@id='app']/main/div/div/div[3]/div/div[2]/div/div/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63bcdf19-e652-4dfa-8943-09ca98a4489d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Ноутбуки и аксессуары",
+      "targets": [
+        ["linkText=Ноутбуки и аксессуары", "linkText"],
+        ["css=.menu-cards__col:nth-child(2) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки и аксессуары')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/div/div/div[3]/div/div[2]/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog/noutbuki-i-aksessuary/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки и аксессуары')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "027f680b-f71e-4049-8e2f-0cd3c01bd33a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Ноутбуки и аксессуары",
+      "targets": [
+        ["linkText=Ноутбуки и аксессуары", "linkText"],
+        ["css=.menu-cards__col:nth-child(2) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки и аксессуары')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/div/div/div[3]/div/div[2]/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog/noutbuki-i-aksessuary/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки и аксессуары')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61f4b7d5-46d9-40b4-9511-114d838d61bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Ноутбуки и аксессуары",
+      "targets": [
+        ["linkText=Ноутбуки и аксессуары", "linkText"],
+        ["css=.menu-cards__col:nth-child(2) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки и аксессуары')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/div/div/div[3]/div/div[2]/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog/noutbuki-i-aksessuary/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки и аксессуары')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9c1605f-f7b1-4468-90c0-eea25f27abb9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбуки и аксессуары",
+      "targets": [
+        ["linkText=Ноутбуки и аксессуары", "linkText"],
+        ["css=.menu-cards__col:nth-child(2) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки и аксессуары')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/div/div/div[3]/div/div[2]/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog/noutbuki-i-aksessuary/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки и аксессуары')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "873e85f6-a218-4746-ab9a-c4db610f94b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбуки",
+      "targets": [
+        ["linkText=Ноутбуки", "linkText"],
+        ["css=.row:nth-child(1) > .col-xs-4:nth-child(1) .link", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки')]", "xpath:link"],
+        ["xpath=//div[@id='app']/section/div/div/section/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//goods.ru/catalog/noutbuki/')]", "xpath:href"],
+        ["xpath=//section/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e724dd0b-ebbf-4b59-bfcd-9dba0298c990",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field-select-caret",
+      "targets": [
+        ["css=.field-select-caret", "css:finder"],
+        ["xpath=//section[@id='listing-wrapper']/div/div/section/noindex/div/div/div/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbce036f-679d-4e61-875b-7b5a55c0b14b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option:nth-child(1)",
+      "targets": [
+        ["css=.option:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='listing-wrapper']/div/div/section/noindex/div/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//noindex/div/div/div/div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'дешевые сверху')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0076682e-7743-420a-a08c-32451eb5944f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field-select-caret",
+      "targets": [
+        ["css=.field-select-caret", "css:finder"],
+        ["xpath=//section[@id='listing-wrapper']/div/div/section/noindex/div/div/div/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c35d761-e9f1-4e15-b858-330511cbd946",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option:nth-child(2)",
+      "targets": [
+        ["css=.option:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='listing-wrapper']/div/div/section/noindex/div/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'дорогие сверху')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fec2fae-f787-4cf0-ad49-1b92bd80aa8c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f1f6137a-00f7-48ff-8dd8-175e16cc67c9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://goods.ru/"],
+  "plugins": []
+}
